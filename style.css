@@ -1,0 +1,272 @@
+
+
+@media screen and (min-width: 600px) {
+
+*{
+    font-family: sans-serif;
+    margin: 0;padding: 0;
+    scroll-behavior: smooth;
+}
+a{text-decoration: none; color: rgb(10, 89, 89);}
+
+.bdy{    background:linear-gradient(rgba(1, 1, 1,.6),rgba(1,41,101,.9));    background-size: cover;    background-repeat: no-repeat;}
+
+
+.phnNev{
+    display: none;
+}
+
+  
+  .NavCantent .btnLogin{
+    position:absolute;
+    right:2%;
+    padding:10px 20px 10px 20px;
+    font-size:13px;
+    background:#287;
+    color:ghostwhite;border-radius:5px;
+  }
+
+#bars{
+    display: none;
+}
+
+.NavClas{
+    position:fixed; color: rgb(10, 89, 89);
+    top:0%;width:100%;
+}
+.NavCantent{
+    width:100%;
+    display: flex; justify-content:center;align-items: center;align-content: center;align-self: center;
+    background:#111;
+}
+
+.NavCantent nav{
+  cursor: pointer;position: relative;
+  font-size: 15px;font-weight: bolder;
+  padding:7px ;
+  margin:10px;
+}
+
+.NavCantent nav:hover{
+  border-bottom:1px solid rgb(156, 151, 151);      
+}
+
+#home,#gellary,#about,#post,#blog{
+    height: 100vh;width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+::-webkit-scrollbar{
+  width:0px;
+}
+.subClas2 ::-webkit-scrollbar{
+  width:2em;
+  border-radius:30px;
+}
+
+#home{
+    color: rgb(113, 213, 13);
+    display: flex;flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+}    
+
+
+.subClas1,.subClas2{
+    display: flex;
+    flex-direction:column;
+    border-left:1px solid grey;
+    height:70vh;object-fit: cover;
+}
+
+.subClas1{
+    padding:20px 100px 0px 100px;
+    border: none;color:cadetblue;
+}
+.subClas1 p{
+  color:#121;font-size:20px;
+}
+
+#about{
+  background-image:url('Cla1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subClas2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;  
+    overflow-y: scroll;
+  }
+.subClas2 a{
+    width:14em;height:9em;box-shadow:1px 2px 4px silver;
+    padding:15px;text-align: center;
+}
+
+.subClas2 img{
+    width:14em;height:7em;
+}
+
+#post{
+  display: flex;flex-direction: row;justify-content:space-around;
+}
+#gellary{display: flex;flex-direction: row;align-items: center;justify-content: space-around;}
+
+
+#gellary .dibba{
+  display: flex;
+  height:50%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content:space-between;
+}
+
+#gellary a nav{
+  padding:10px; border-radius:5px; 
+  cursor: pointer;
+  margin:7px;
+  color:ghostwhite; 
+  background:cadetblue;
+  width:fit-content;
+  justify-content:space-between;
+  }
+#gellary a nav p{
+    color:#669;
+    margin-left:40px;
+}
+ iframe{
+    margin-top:30px;
+    height:300px;
+}
+ #post iframe{
+    width:300px;
+}
+#post{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer{
+    position: sticky;
+    padding-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background:#111;
+    padding:10px;
+    color:grey;
+}
+
+footer div{
+    flex-direction: column;
+    display: flex;
+    margin-top:20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer .footIcns{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+}
+footer .footIcns a{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width:10em;
+    font-size:13px;
+}
+
+footer .footIcns a p{
+    font-size:19px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+    width:5em;color:grey;
+}
+
+footer .footLinks a{
+    color:deepskyblue;
+    width: fit-content;
+    padding-bottom:5px;
+    margin-top:20px;
+    border-bottom :1px solid deepskyblue;
+}
+
+.subcribebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.subcribebox .imalscten{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.subcribebox .imgsctn img{
+    width:90%;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top:20%;left:auto;
+    right: auto;
+    width: 40%;
+    height:60%;
+    margin:5px;
+    background:#8359;
+    color: whitesmoke;
+}
+.loginForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:90%;
+}
+
+.loginForm form input,button{
+    padding:10px;
+    font-size:18px;
+    width:70%;
+    margin:10px;
+}
+.loginForm form input{
+    outline: none;
+    border: none;
+}
+.loginForm form button{
+    width:75.6%;
+}
+
+
+.loginForm #LogCutBtn{
+    margin:30px 30px 0px 0px;
+
+}
+
+}
+
+
+
